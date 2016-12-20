@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="./static/index.css">
+  </head>
+  <body>
+    <div class="ui-header">
+        <h1 id="nickname"></h1>
+        <div class="typing-list"></div>
+    </div>
+    <div class="grid">
+        <div class="message-wrap">
+            <ul id="messages"></ul>
+            <form action="">
+                <input id="m" placeholder="试试@昵称 可以发送私信" autocomplete="off" /><button>Send</button>
+            </form>
+        </div>
+       
+        <div class="panel">
+            <div class="tit">在线用户</div>
+            <div class="content">
+                <ul id="online-list"></ul>
+            </div>
+        </div>
+      
+    </div>
+    <script src="./static/jquery.js"></script>
+    <script src="./static/socket.io.js"></script>
+    <script src="./static/index.js"></script>
+  </body>
+</html>
